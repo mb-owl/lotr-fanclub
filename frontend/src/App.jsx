@@ -1,28 +1,27 @@
-import { useState, useEffect } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
+import Contact from "./components/pages/Contact";
+import NotFound from "./components/pages/NotFound";
+import Layout from "./components/pages/Layout";
+
+
 
 function App() {
-  const [message, setMessage] = useState("Loading...");
-
-  useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/welcome/")
-      .then((response) => response.json())
-      .then((data) => {
-        setMessage(data.message);
-      })
-      .catch((error) => {
-        console.error("Error fetching welcome message:", error);
-        setMessage("Failed to load message 😢");
-      });
-  }, []); // run once on component mount
-
   return (
-    <div className="App">
-      <h1>{message}</h1>
+    <div>
+<BrowserRouter>
+  <Routes>
+    {/* Layout route wraps child routes */}
+    <Route path="/" element={<Layout />}>
+      <Route index element={<Home />} />
+      <Route path="about" element={<About />} />
+      <Route path="contact" element={<Contact />} />
+      <Route path="*" element={<NotFound />} />
+    </Route>
+  </Routes>
+</BrowserRouter>
     </div>
   );
 }
-
 export default App;
