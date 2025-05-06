@@ -17,7 +17,7 @@ function Header() {
     `}</style>
       <nav className="bg-gray-800 text-white p-4">
         <h1 className="text-2xl font-bold mb-2">🧙‍♂️ LOTR Fan Club</h1>
-        <ul className="flex space-x-4">
+        <ul className="flex space-x-0">
           <li>
             <NavLink
               to="/"
@@ -27,7 +27,7 @@ function Header() {
               {" 𖣂 "}
               Home
             </NavLink>
-          </li>{""}
+          </li>
           <li>
             <NavLink
               to="/about"
@@ -41,7 +41,8 @@ function Header() {
             <NavLink
               to="/contact"
               className={({ isActive }) => (isActive ? "text-yellow-300" : "")}
-            >{" 𖣂 "}
+            >
+              {" 𖣂 "}
               Contact
               {" 𖣂 "}
             </NavLink>

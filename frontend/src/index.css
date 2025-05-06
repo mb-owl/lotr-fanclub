@@ -1,5 +1,4 @@
-@import 'tailwindcss';
-
+@import "tailwindcss";
 
 :root {
   font-family: system-ui, Georgia, Verdana, sans-serif, serif;
@@ -27,12 +26,42 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
   color: rgb(245, 243, 224);
   font-family: Verdana;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2rem;
+  text-align: center;
+}
+
+#root,
+main,
+.min-h-screen,
+.flex,
+.flex-col,
+.flex-grow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 h1 {
@@ -78,6 +107,26 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  #root,
+  main {
+    padding: 0.5rem;
+  }
+  main {
+    max-width: 100vw;
+  }
+}
+
 .div {
   position: absolute;
   top: 50%;
