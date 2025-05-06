@@ -1,5 +1,57 @@
 @import "tailwindcss";
 
+@theme {
+  --color-custom-natural-gray: #8A8885;
+  --color-custom-cloud: #CFCDC7;
+  --color-custom-bison-hide: #C3B5A4;
+  --color-custom-shadow: #8A6851;
+  --color-custom-di-serria: #D7AE5F;
+  --color-custom-sandstone: #D2C5B0; /* warm beige */
+  --color-custom-warm-gray: #A89F94; /* warm gray */
+  --color-custom-cool-gray: #9CA3AF; /* cool gray */
+
+  /* Blues */
+  --color-custom-slate-gray: #758798;
+  --color-custom-regent-gray: #8C949E;
+  --color-custom-cerulean: #5A9BD5; /* vibrant blue */
+  --color-custom-navy: #1F3A93; /* deep navy */
+  --color-custom-sky-blue: #87CEEB; /* light sky blue */
+
+  /* Greens */
+  --color-custom-green-spring: #BAC5B6;
+  --color-custom-mantle: #819C8E;
+  --color-custom-woodland: #4D4D24;
+  --color-custom-yuma: #CEC79A;
+  --color-custom-bud: #A2AC9D;
+  --color-custom-pumice: #B4BCB4;
+  --color-custom-camouflage-green: #7C8C6C;
+  --color-custom-olive: #808000; /* classic olive */
+  --color-custom-emerald: #50C878; /* vibrant green */
+
+  /* Dark Tones */
+  --color-custom-outer-space: #212A29;
+  --color-custom-gondola: #2D1821;
+  --color-custom-night-rider: #0B0806;
+  --color-custom-boulder: #7C7474;
+  --color-custom-charcoal: #36454F; /* deep charcoal */
+  --color-custom-ebony: #555D50; /* dark gray-green */
+
+  /* Purples / Roses */
+  --color-custom-lily: #C2ABB4;
+  --color-custom-mandys-pink: #F3D1C1;
+  --color-custom-mauve: #E0B0FF; /* soft purple */
+  --color-custom-plum: #8E4585; /* deep purple */
+  --color-custom-rosewood: #65000B; /* dark rose */
+
+  /* LOTR Yellows and Golds */
+  --color-custom-tahuna-sands: #F0EDCB;
+  --color-custom-kumera: #8E722C;
+  --color-custom-tacha: #D0BE66;
+  --color-custom-domino: #8D7E5D;
+  --color-custom-amber: #FFBF00; /* bright amber */
+  --color-custom-bronze: #CD7F32; /* metallic bronze */
+}
+
 :root {
   font-family: system-ui, Georgia, Verdana, sans-serif, serif;
   line-height: 1.5;
