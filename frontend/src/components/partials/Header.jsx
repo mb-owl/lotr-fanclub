@@ -1,28 +1,51 @@
-import { Outlet, Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
-    <>
-      <style>{`
-      ul {
-        list-style-type: '𖣂 ';
-        list-style-position: inside;
-        margin: 0;
-        padding: 0;
-      }
-      li {
-        display: inline;
-        width: 100%;
-      }
-    `}</style>
-      <nav className="bg-gray-800 text-white p-4">
-        <h1 className="text-2xl font-bold mb-2">🧙‍♂️ LOTR Fan Club</h1>
-        <ul className="flex space-x-0">
+    <header
+      style={{
+        width: "100vw",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        background: "#1f2937", // Tailwind's gray-800
+        color: "#fff",
+        padding: "1.5rem 0",
+      }}
+    >
+      <h1
+        style={{
+          fontSize: "2rem",
+          fontWeight: "bold",
+          marginBottom: "0.5rem",
+          textAlign: "center",
+        }}
+      >
+        🧙‍♂️ LOTR Fan Club
+      </h1>
+      <nav>
+        <ul
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "1.25rem",
+            listStyle: "none",
+            padding: 0,
+            margin: 0,
+          }}
+        >
           <li>
             <NavLink
               to="/"
               end
-              className={({ isActive }) => (isActive ? "text-yellow-300" : "")}
+              style={({ isActive }) => ({
+                color: isActive ? "#fde68a" : "#fff",
+                textDecoration: "none",
+                fontWeight: 500,
+              })}
             >
               {" 𖣂 "}
               Home
@@ -31,7 +54,11 @@ function Header() {
           <li>
             <NavLink
               to="/about"
-              className={({ isActive }) => (isActive ? "text-yellow-300" : "")}
+              style={({ isActive }) => ({
+                color: isActive ? "#fde68a" : "#fff",
+                textDecoration: "none",
+                fontWeight: 500,
+              })}
             >
               {" 𖣂 "}
               About
@@ -40,17 +67,20 @@ function Header() {
           <li>
             <NavLink
               to="/contact"
-              className={({ isActive }) => (isActive ? "text-yellow-300" : "")}
+              style={({ isActive }) => ({
+                color: isActive ? "#fde68a" : "#fff",
+                textDecoration: "none",
+                fontWeight: 500,
+              })}
             >
-              {" 𖣂 "}
+              {" 𖣂  "}
               Contact
-              {" 𖣂 "}
             </NavLink>
           </li>
         </ul>
       </nav>
-      <br></br>
-    </>
+    </header>
   );
 }
+
 export default Header;
