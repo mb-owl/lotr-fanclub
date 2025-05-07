@@ -6,6 +6,7 @@ const ContactForm = () => {
     const [message, setMessage] = useState("");
     const [error, setStatus] = useState(null);
 
+
     const handleSubmit = async (e) => {
         e.preventDefault(); //prevents form full reload with error
         if (!name || !email || !message) {
@@ -27,7 +28,7 @@ const ContactForm = () => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
-                className="w-full p-2 border border-gray-300 rounded"
+                className="w-full p-2 border border-gray-300 rounded text-custom-charcoal"
                 placeholder="Enter your name"
             />
             </div>
@@ -38,7 +39,7 @@ const ContactForm = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="w-full p-2 border border-gray-300 rounded"
+                className="w-full p-2 border border-gray-300 rounded text-custom-charcoal"
                 placeholder="Enter your email"
             />
             </div>
@@ -48,7 +49,7 @@ const ContactForm = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 required
-                className="w-full p-2 border border-gray-300 rounded"
+                className="w-full p-2 border border-gray-300 rounded text-custom-charcoal"
                 placeholder="Enter your message"
                 rows="4"
             />

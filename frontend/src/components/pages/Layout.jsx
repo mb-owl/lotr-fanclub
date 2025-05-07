@@ -8,7 +8,7 @@ const Layout = () => {
       <Header />
 
       {/* Content Outlet */}
-      <main className="flex-grow flex items-center justify-center">
+      <main className="flex-grow">
         {/* placeholder - Outlet  */}
         <Outlet />
       </main>
