@@ -18,10 +18,8 @@ const ContactForm = () => {
     }
 
     return (
+    
         <form onSubmit={handleSubmit} className="space-y-4">
-
-
-
             <div>
             <label className="block text-gray-700 font-semibold mb-2">Name</label>
             <input

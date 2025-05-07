@@ -5,11 +5,11 @@ function About() {
         <h2 className="text-3xl md:text-4xl font-serif font-normal mb-6 text-gray-900 tracking-wide drop-shadow">
           About Our Fan Club
         </h2>
-        <p className="text-xl md:text-2xl font-normal max-w-xl mx-auto mb-4 text-slate-800">
+        <p className="text-xl md:text-2l font-normal max-w-xl mx-auto mb-4 text-slate-800">
           Founded in the year 2025 of the Fourth Age, our fan club is a
           fellowship of Tolkien enthusiasts...
         </p>
-        <p className="text-xl md:text-2xl font-normal max-w-xl mx-auto text-sage-900">
+        <p className="text-xl md:text-2l font-normal max-w-xl mx-auto mb-4 text-slate-800">
           Our mission is to share knowledge, organize events, and keep the
           spirit of Middle-earth alive.
         </p>
