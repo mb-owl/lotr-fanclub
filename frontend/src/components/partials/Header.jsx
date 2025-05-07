@@ -2,83 +2,65 @@ import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
-    <header
-      style={{
-        width: "100vw",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        background: "#1f2937", // Tailwind's gray-800
-        color: "#fff",
-        padding: "1.5rem 0",
-      }}
-    >
-      <h1
-        style={{
-          fontSize: "2rem",
-          fontWeight: "bold",
-          marginBottom: "0.5rem",
-          textAlign: "center",
-        }}
-      >
-        🧙‍♂️ LOTR Fan Club
-      </h1>
-      <nav>
-        <ul
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "1.25rem",
-            listStyle: "none",
-            padding: 0,
-            margin: 0,
-          }}
-        >
-          <li>
-            <NavLink
-              to="/"
-              end
-              style={({ isActive }) => ({
-                color: isActive ? "#fde68a" : "#fff",
-                textDecoration: "none",
-                fontWeight: 500,
-              })}
-            >
-              {" 𖣂 "}
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/about"
-              style={({ isActive }) => ({
-                color: isActive ? "#fde68a" : "#fff",
-                textDecoration: "none",
-                fontWeight: 500,
-              })}
-            >
-              {" 𖣂 "}
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/contact"
-              style={({ isActive }) => ({
-                color: isActive ? "#fde68a" : "#fff",
-                textDecoration: "none",
-                fontWeight: 500,
-              })}
-            >
-              {" 𖣂  "}
-              Contact
-            </NavLink>
-          </li>
-        </ul>
-      </nav>
+    <header className="w-full flex flex-col items-center justify-center bg-gradient-to-b from-sage-100 via-slate-100 to-stone-100 text-slate-800 py-6 shadow-md border-b border-slate-200">
+      <div className="w-full max-w-xl flex flex-col items-center">
+        <h1 className="text-2xl md:text-3xl font-serif font-normal mb-2 text-gray-900 tracking-wide drop-shadow-sm">
+          🧙‍♂️ The Society of the One Ring:
+        </h1>
+        <h2 className="text-lg md:text-xl font-serif font-normal mb-4 text-gray-800 tracking-wide drop-shadow-sm">
+          A Lord of the Rings Fan Society
+        </h2>
+        <nav className="w-full">
+          <ul className="flex flex-row justify-center items-center gap-6 list-none p-0 m-0">
+            <li>
+              <NavLink
+                to="/"
+                end
+                className={({ isActive }) =>
+                  `transition-colors font-normal px-3 py-1 rounded-md ${
+                    isActive
+                      ? "bg-sage-200 text-sage-900 shadow"
+                      : "text-slate-700 hover:bg-sage-100 hover:text-sage-900"
+                  }`
+                }
+              >
+                {" 𖣂 "}
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  `transition-colors font-normal px-3 py-1 rounded-md ${
+                    isActive
+                      ? "bg-sage-200 text-sage-900 shadow"
+                      : "text-slate-700 hover:bg-sage-100 hover:text-sage-900"
+                  }`
+                }
+              >
+                {" 𖣂 "}
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  `transition-colors font-normal px-3 py-1 rounded-md ${
+                    isActive
+                      ? "bg-sage-200 text-sage-900 shadow"
+                      : "text-slate-700 hover:bg-sage-100 hover:text-sage-900"
+                  }`
+                }
+              >
+                {" 𖣂 "}
+                Contact
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 }
