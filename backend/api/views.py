@@ -17,8 +17,7 @@ def contact_form(request):
     #basic validation
     if not name or not email or not message:
         return Response({'error': 'All fields are required.'}, status=400)
-    if '@' not in email:
-        return Response({'error': 'Invalid email address.'}, status=400)
+
     
     #process form data (send email, log message)
     print(f'[Contact] New message from {name} ({email}): {message}')
@@ -28,14 +27,12 @@ def contact_form(request):
         send_mail(
             subject='New Contact Form Submission',
             message=f'Name: {name}\nEmail: {email}\nMessage: {message}',
-            from_email=settings.DEFAULT_FROM_EMAIL, or 'noreply@example.com'
+            from_email=settings.DEFAULT_FROM_EMAIL or 'noreply@example.com',
             recipient_list=[settings.DEFAULT_FROM_EMAIL],
         )
     except Exception as e:
-        print(f'[Error] Failed to send email: {e}')
-        return Response({'error': 'Failed to send email.'}, status=500)
-    #return success response
-    return Response({'success': 'Message sent successfully!'}, status=200)
+        print('email send failed:', e)
+    return Response({'success': True, 'message': 'Message Received'}, status=200)
 
 
 @api_view(['GET'])
@@ -45,4 +42,5 @@ def welcome(request):
 
 def home(request):
     return HttpResponse("Welcome to the LOTR Fan Club, adventurer!")
+
           
