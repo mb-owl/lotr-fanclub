@@ -53,10 +53,10 @@ LOTR Fan Club is an interactive platform for Lord of the Rings enthusiasts to co
 ### App Screenshots
 
 <div align="center">
-  <img src="images/lotr-screenshot1.png" alt="LOTR Fan Club Screenshot 1" width="200" style="margin: 10px" />
-  <img src="images/lotr-screenshot2.png" alt="LOTR Fan Club Screenshot 2" width="200" style="margin: 10px" />
-  <img src="images/lotr-screenshot3.png" alt="LOTR Fan Club Screenshot 3" width="200" style="margin: 10px" />
-  <img src="images/lotr-screenshot4.png" alt="LOTR Fan Club Screenshot 4" width="200" style="margin: 10px" />
+  <img src="api/images/lotr-screenshot1.png" alt="LOTR Fan Club Screenshot 1" width="200" style="margin: 10px" />
+  <img src="api/images/lotr-screenshot2.png" alt="LOTR Fan Club Screenshot 2" width="200" style="margin: 10px" />
+  <img src="api/images/lotr-screenshot3.png" alt="LOTR Fan Club Screenshot 3" width="200" style="margin: 10px" />
+  <img src="api/images/lotr-screenshot4.png" alt="LOTR Fan Club Screenshot 4" width="200" style="margin: 10px" />
 </div>
 
 Key Features:
