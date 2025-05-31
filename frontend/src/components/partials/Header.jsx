@@ -8,7 +8,7 @@ function Header() {
           🧙‍♂️ The Society of the One Ring:
         </h1>
         <h2 className="text-lg md:text-xl font-serif font-normal mb-4 text-gray-800 tracking-wide drop-shadow-sm">
-          A Lord of the Rings Fan Society
+          A Lord of the Rings Fan Club
         </h2>
         <nav className="w-full">
           <ul className="flex flex-row justify-center items-center gap-6 list-none p-0 m-0">
