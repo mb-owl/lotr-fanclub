@@ -46,17 +46,17 @@
 
 ## About The Project
 
-[![LOTR Fan Club Main Screen](images/lotr-screenshot1.png)](https://example.com)
+[![LOTR Fan Club Main Screen](backend/api/images/lotr-screenshot1.png)](https://example.com)
 
 LOTR Fan Club is an interactive platform for Lord of the Rings enthusiasts to connect, share their love for Tolkien's world, and engage with fellow fans. Built with a Django backend for robust data management and a React frontend for an engaging user experience.
 
 ### App Screenshots
 
 <div align="center">
-  <img src="api/images/lotr-screenshot1.png" alt="LOTR Fan Club Screenshot 1" width="200" style="margin: 10px" />
-  <img src="api/images/lotr-screenshot2.png" alt="LOTR Fan Club Screenshot 2" width="200" style="margin: 10px" />
-  <img src="api/images/lotr-screenshot3.png" alt="LOTR Fan Club Screenshot 3" width="200" style="margin: 10px" />
-  <img src="api/images/lotr-screenshot4.png" alt="LOTR Fan Club Screenshot 4" width="200" style="margin: 10px" />
+  <img src="backend/api/images/lotr-screenshot1.png" alt="LOTR Fan Club Screenshot 1" width="200" style="margin: 10px" />
+  <img src="backend/api/images/lotr-screenshot2.png" alt="LOTR Fan Club Screenshot 2" width="200" style="margin: 10px" />
+  <img src="backend/api/images/lotr-screenshot3.png" alt="LOTR Fan Club Screenshot 3" width="200" style="margin: 10px" />
+  <img src="backend/api/images/lotr-screenshot4.png" alt="LOTR Fan Club Screenshot 4" width="200" style="margin: 10px" />
 </div>
 
 Key Features:
