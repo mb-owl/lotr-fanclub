@@ -46,7 +46,7 @@
 
 ## About The Project
 
-[![LOTR Fan Club Main Screen](images/lotr-screenshot1.png)](https://example.com)
+[![LOTR Fan Club Main Screen](api/images/lotr-screenshot1.png)](https://example.com)
 
 LOTR Fan Club is an interactive platform for Lord of the Rings enthusiasts to connect, share their love for Tolkien's world, and engage with fellow fans. Built with a Django backend for robust data management and a React frontend for an engaging user experience.
 
